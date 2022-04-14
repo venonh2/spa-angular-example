@@ -1,18 +1,20 @@
 <single-spa-router>
   <main>
-    <!--  <header>
+    <header>
       <application name="@iris/header"></application>
-    </header> -->
+    </header>  
     <route default>
       <!-- entender melhor sobre route default-->
       <application name="@iris/body"></application>
     </route>
     <!-- estou carregando dentro de um footer o footer angular-->
+<route path="/iris-cadastro">
+  <application name="@iris/footer"></application>
+</route>
 
-    <route path="/teste">
-      <footer>
-        <application name="@iris/footer"></application>
-      </footer>
-    </route>
+
+   <!--  <footer>
+      <application name="@iris/footer"></application>
+    </footer> -->
   </main>
 </single-spa-router>
